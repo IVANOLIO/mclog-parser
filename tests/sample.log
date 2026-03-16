@@ -1,0 +1,20 @@
+[08:00:01] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[08:00:05] [Server thread/INFO]: Server started on port 25565
+[08:15:32] [Server thread/INFO]: Ahmed99 joined the game
+[08:16:10] [Server thread/INFO]: <Ahmed99> مرحبا بالجميع
+[08:16:45] [Server thread/INFO]: Player123 joined the game
+[08:17:00] [Server thread/INFO]: <Player123> hey!
+[08:20:15] [Server thread/WARN]: Can't keep up! Is the server overloaded?
+[08:22:00] [Server thread/INFO]: Ahmed99 was slain by Zombie
+[08:23:11] [Server thread/INFO]: Player123 fell from a high place
+[08:25:00] [Server thread/INFO]: SalimGG joined the game
+[08:30:44] [Server thread/WARN]: Can't keep up! Is the server overloaded?
+[08:35:00] [Server thread/INFO]: Player123 left the game
+[08:40:00] [Server thread/ERROR]: java.lang.OutOfMemoryError: Java heap space
+[08:40:00] [Server thread/ERROR]: at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:714)
+[08:40:00] [Server thread/ERROR]: Caused by: java.lang.OutOfMemoryError
+[08:45:00] [Server thread/INFO]: Player123 joined the game
+[08:50:10] [Server thread/INFO]: Ahmed99 was blown up by Creeper
+[08:55:00] [Server thread/INFO]: SalimGG left the game
+[09:00:00] [Server thread/INFO]: Ahmed99 left the game
+[09:05:00] [Server thread/INFO]: Player123 left the game

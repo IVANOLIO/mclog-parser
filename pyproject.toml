@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mclog-parser"
-version = "0.1.0"
+version = "0.1.4"
 description = "Parse and analyze Minecraft server log files"
 readme = "README.md"
 license = { text = "MIT" }

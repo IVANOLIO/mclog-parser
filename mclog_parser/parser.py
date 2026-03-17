@@ -15,7 +15,7 @@ _LEAVE_RE    = re.compile(r"^(?P<player>\w+) left the game$")
 _DEATH_RE    = re.compile(r"^(?P<player>\w+) (?:was|died|fell|drowned|burned|blew|hit|tried|walked|withered|starved|suffocated|kinetic).+$")
 _CHAT_RE     = re.compile(r"^<(?P<player>\w+)> (?P<message>.+)$")
 _LAG_RE      = re.compile(r"Can't keep up!")
-_CRASH_RE    = re.compile(r"(?:java\.\w+Exception|java\.lang\.Error|Caused by:|FATAL)")
+_CRASH_RE    = re.compile(r"(?:java\.\w+Exception|java\.\w+Error|RuntimeException|Caused by:|FATAL)")
 
 
 class LogParser:
@@ -62,7 +62,7 @@ class LogParser:
         """Return all crash/error events with context."""
         results = []
         for i, line in enumerate(self._lines):
-            if _CRASH_RE.search(line["msg"]) or line["level"] in ("ERROR", "FATAL"):
+            if _CRASH_RE.search(line["msg"]):
                 results.append({
                     "time":    line["time"],
                     "level":   line["level"],
